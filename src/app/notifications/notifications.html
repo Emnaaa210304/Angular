@@ -1,0 +1,29 @@
+
+<section class="notifications-card">
+
+  <div class="notification-icon">
+    🔔
+  </div>
+
+  <div class="notification-content">
+
+    <h2>Zone de notifications</h2>
+
+    <p>
+      Vous avez {{ nombreNotifications }} nouvelles notifications.
+    </p>
+
+    <button (click)="afficherNotifications()">
+      {{ afficher ? 'Masquer les notifications' : 'Afficher les notifications' }}
+    </button>
+
+    @if (afficher) {
+      <div class="notification-details">
+        <p>Notification 1</p>
+        <p>Notification 2</p>
+      </div>
+    }
+
+  </div>
+
+</section>
